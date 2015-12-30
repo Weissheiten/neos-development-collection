@@ -31,6 +31,15 @@ A node type definition can look as follows::
 
 The following options are allowed:
 
+``label``
+
+  The string displayed in the backend tree view, by default this will be the title property of the node.
+  It is also possible to use EEL expressions though.
+  Example: Show the count of the nodes children in front of the title:
+  
+    'TYPO3.Neos:Node':
+      label: "${'[' + q(node).children().count() + '] ' + q(node).property('title')}"
+
 ``superTypes``
   An array of parent node types inherited from as keys with a boolean values.::
 
