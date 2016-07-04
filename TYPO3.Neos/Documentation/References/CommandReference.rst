@@ -1873,7 +1873,7 @@ Options
 ``typo3.neos:site:export``
 **************************
 
-**Export sites content (e.g. site:export --package-key &quot;Neos.Demo&quot;)**
+**Export sites content (e.g. site:export --package-key "Neos.Demo")**
 
 This command exports all or one specific site with all its content into an XML format.
 
